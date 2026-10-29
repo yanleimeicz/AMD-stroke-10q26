@@ -1,0 +1,35 @@
+# Python packages imported by the scripts in code_release/scripts (third-party only; versions as installed on the
+# analysis workstation, Windows 11, read with importlib.metadata / conda-meta on 2026-10-07).
+#
+# Two interpreters were used:
+#   (A) general scripts (data download, 10q26/3p14 conditional models, revision rounds 2-5, figures, tables):
+#       CPython 3.14.5 (python.org build) + project-local packages in <root>/.pydeps (beautifulsoup4, soupsieve)
+#   (B) single-cell scripts (50_scrna.py, 52_scrna_adamts9.py): conda environment "sc", CPython 3.11.16,
+#       created with micromamba from conda-forge (see sc_environment section below)
+# Install (A) with:  pip install -r python_requirements.txt   (lines marked [sc] belong to environment B)
+
+# ---- (A) general environment, Python 3.14.5
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.17.1
+matplotlib==3.10.9
+requests==2.34.2
+openpyxl==3.1.5            # build_supp_tables_rev.py, helpers/pqtl_xlsx2tsv.py; pandas.read_excel
+python-docx==1.2.0         # import docx: build_docx.py, build_af1.py, build_strobe_mr_rev.py
+pillow==12.2.0             # import PIL: rev_common.py
+PyMuPDF==1.27.2.3          # import fitz: figs_supp.py, check_text_colors.py, revision3/r3_pdftext.py
+beautifulsoup4==4.15.0     # import bs4: 02_nhanes_codebook.py (installed in <root>/.pydeps)
+soupsieve==2.10            # dependency of beautifulsoup4 (in <root>/.pydeps)
+joblib==1.5.3              # revision2/rev2_10q26.py, revision3/panukb_*.py, revision4/rev4_C_*.py
+
+# ---- (B) single-cell environment "sc", Python 3.11.16 (conda-forge via micromamba)  [sc]
+# scanpy==1.11.5          [sc]  50_scrna.py
+# anndata==0.12.19        [sc]  52_scrna_adamts9.py (and scanpy dependency)
+# numpy==2.4.6            [sc]
+# pandas==2.3.3           [sc]
+# scipy==1.17.1           [sc]
+# matplotlib-base==3.11.2 [sc]
+# h5py==3.16.0            [sc]
+# python-igraph==1.0.0    [sc]  (scanpy neighbours/leiden; installed with the env)
+# leidenalg==0.12.0       [sc]
+# To recreate:  micromamba create -p <root>/envs/sc -c conda-forge python=3.11 scanpy=1.11.5 anndata=0.12.19 h5py requests

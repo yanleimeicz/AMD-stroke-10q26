@@ -1,0 +1,8 @@
+biorxiv_v2_full.html	https://www.biorxiv.org/content/10.64898/2026.03.30.714946v2.full
+biorxiv_v2_supp.html	https://www.biorxiv.org/content/10.64898/2026.03.30.714946v2.supplementary-material
+biorxiv_api_v2.json	https://api.biorxiv.org/details/biorxiv/10.64898/2026.03.30.714946
+spectacle.html	https://oculargeneexpression.org/singlecell
+jenger_en.html	http://jenger.riken.jp/en/data
+gwascat_akiyama.json	https://www.ebi.ac.uk/gwas/rest/api/studies/search/findByPublicationIdPubmedId?pubmedId=36423732
+gwascat_momozawa.json	https://www.ebi.ac.uk/gwas/rest/api/studies/search/findByPublicationIdPubmedId?pubmedId=30054478
+gwascat_orozco.json	https://www.ebi.ac.uk/gwas/rest/api/studies/search/findByPublicationIdPubmedId?pubmedId=31995762

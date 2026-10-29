@@ -1,0 +1,33 @@
+package	version	source	version_in_manuscript_Methods	n_scripts	used_in
+R	4.5.2	https://cran.r-project.org (Windows x86_64 build)	4.5.2		all .R scripts
+cause	1.2.0	GitHub jean997/cause (installed from local source); patched function in scripts/helpers/cause_fix.R	1.2.0	1	rev_mr_03_robust.R
+coloc	5.2.3	CRAN	5.2.3	9	32_coloc_gwas.R, 38_smr_heidi_druggable.R, 48_tissue_eqtl.R, 49_cojo_susie.R, 74_adamts9.R, 75d_rev_adamts9_locus.R, revision/R1_10q26_insample.R, revision2/rev2_concordant_blocks.R, revision4/rev4_C_coloc.R
+data.table	1.18.0	CRAN		43	30_prepare_gwas.R, 30b_check_iamdgc_sign.R, 31_mr_bidirectional.R, 32_coloc_gwas.R, 33_eqtl_smr.R, 34_ldsc_rg.R, 35_coloc_post.R, 36_mr_steiger.R, 37_mr_coloc_figures.R, 38_smr_heidi_druggable.R, 38a_make_ma.R, 38b_ld_subset.R, 39_pqtl_mr.R, 45_csvd_gwas_prep.R, 46_csvd_mr_ldsc.R, 47_lava_local_rg.R, 48_tissue_eqtl.R, 48a_fetch_tissue_eqtl.R, 48b_gwas_regions.R, 49_cojo_susie.R, 74_adamts9.R, 74a_adamts9_data.R, 74b_adamts9_cimt.R, 75_c4_conditional.R, 75a_rev_adamts9_fetch.R, 75b_rev_adamts9_finngen_susie.R, 75c_rev_adamts9_mvmr.R, 75d_rev_adamts9_locus.R, 76_rev_extra.R, manuscript_build/build/rev_fig_export.R, manuscript_build/build/rev_s4_export.R, manuscript_build/build_v1/fig_export.R, manuscript_build/build_v1/fig_export_abo.R, rev_mr_00_prep.R, rev_mr_01_mr.R, rev_mr_02_fdr_concordance.R, rev_mr_03_robust.R, revision/R1_10q26_insample.R, revision2/rev2_concordant_blocks.R, revision5/r5_01_kappa_complement_af.R, revision5/r5_04_corivw.R, story/story_01_mr.R, story/story_02_tables.R
+dplyr	1.2.1	CRAN		7	10_nhanes_stroke_amd.R, 31_mr_bidirectional.R, 32_coloc_gwas.R, 33_eqtl_smr.R, 39_pqtl_mr.R, 46_csvd_mr_ldsc.R, rev_mr_03_robust.R
+forestploter	1.2.0	CRAN		1	11_nhanes_forest_plots.R
+futile.logger	1.4.9	CRAN		1	39_pqtl_mr.R
+GenomicSEM	0.0.5	GitHub GenomicSEM/GenomicSEM@da95d43	0.0.5	3	34_ldsc_rg.R, 46_csvd_mr_ldsc.R, 76_rev_extra.R
+ggplot2	4.0.3	CRAN		12	11_nhanes_forest_plots.R, 31_mr_bidirectional.R, 35_coloc_post.R, 37_mr_coloc_figures.R, 38_smr_heidi_druggable.R, 39_pqtl_mr.R, 46_csvd_mr_ldsc.R, 47_lava_local_rg.R, 49_cojo_susie.R, rev_mr_01_mr.R, rev_mr_02_fdr_concordance.R, rev_mr_03_robust.R
+ggrepel	0.9.8	CRAN		1	47_lava_local_rg.R
+grid	4.5.2	base R		2	11_nhanes_forest_plots.R, 39_pqtl_mr.R
+haven	2.5.5	CRAN		1	10_nhanes_stroke_amd.R
+httr	1.4.8	CRAN		1	74_adamts9.R
+hyprcoloc	0.0.2	GitHub cnfoley/hyprcoloc (separate library Rlib_hypr)	0.0.2	1	75d_rev_adamts9_locus.R
+ieugwasr	1.1.0.9000	GitHub MRCIEU/ieugwasr (local install); used for ld_clump with local PLINK/1000G, no API token needed		5	31_mr_bidirectional.R, 32_coloc_gwas.R, 33_eqtl_smr.R, 39_pqtl_mr.R, 46_csvd_mr_ldsc.R
+jsonlite	2.0.0	CRAN		1	74_adamts9.R
+LAVA	0.1.5	GitHub josefin-werme/LAVA	0.1.5	2	47_lava_local_rg.R, rev_mr_03_robust.R
+loo	2.10.1	CRAN (cause dependency)		1	rev_mr_03_robust.R
+MendelianRandomization	0.10.0	CRAN	0.10.0	3	rev_mr_01_mr.R, revision5/r5_01_kappa_complement_af.R, revision5/r5_04_corivw.R
+mice	3.19.0	CRAN	3.19.0	1	10_nhanes_stroke_amd.R
+mitools	2.7	CRAN		1	10_nhanes_stroke_amd.R
+mr.raps	0.4.3	GitHub qingyuanzhao/mr.raps@dd79b5b	0.4.3	2	rev_mr_01_mr.R, rev_mr_01b_raps.R
+mrclust	0.1.0	GitHub cnfoley/mrclust@039ed85	0.1.0	1	rev_mr_03_robust.R
+MRlap	0.0.3.3	GitHub n-mounier/MRlap (installed from local source)	0.0.3.3	1	rev_mr_03_robust.R
+MRPRESSO	1.0	GitHub rondolab/MR-PRESSO@3e3c92d	1.0	2	31_mr_bidirectional.R, 46_csvd_mr_ldsc.R
+parallel	4.5.2	base R		14	38_smr_heidi_druggable.R, 39_pqtl_mr.R, 47_lava_local_rg.R, 48_tissue_eqtl.R, 48b_gwas_regions.R, 49_cojo_susie.R, 74_adamts9.R, 74a_adamts9_data.R, 75a_rev_adamts9_fetch.R, 75b_rev_adamts9_finngen_susie.R, manuscript_build/build_v1/fig_export.R, manuscript_build/build_v1/fig_export_abo.R, rev_mr_03_robust.R, revision2/rev2_concordant_blocks.R
+R.utils	2.13.0	CRAN (needed by data.table::fread for .gz files)		25	30_prepare_gwas.R, 32_coloc_gwas.R, 33_eqtl_smr.R, 34_ldsc_rg.R, 35_coloc_post.R, 38_smr_heidi_druggable.R, 45_csvd_gwas_prep.R, 46_csvd_mr_ldsc.R, 48_tissue_eqtl.R, 48a_fetch_tissue_eqtl.R, 74_adamts9.R, 74a_adamts9_data.R, 74b_adamts9_cimt.R, 75a_rev_adamts9_fetch.R, 75b_rev_adamts9_finngen_susie.R, 75c_rev_adamts9_mvmr.R, 75d_rev_adamts9_locus.R, 76_rev_extra.R, manuscript_build/build/rev_fig_export.R, manuscript_build/build_v1/fig_export.R, rev_mr_00_prep.R, revision5/r5_01_kappa_complement_af.R, revision5/r5_04_corivw.R, story/story_01_mr.R, story/story_02_tables.R
+Rsamtools	2.26.0	Bioconductor 3.22 (bioc-release r-universe)		6	48a_fetch_tissue_eqtl.R, 74a_adamts9_data.R, 74b_adamts9_cimt.R, 75a_rev_adamts9_fetch.R, 75b_rev_adamts9_finngen_susie.R, story/story_01_mr.R
+survey	4.5	CRAN	4.5	1	10_nhanes_stroke_amd.R
+susieR	0.14.2	CRAN	0.14.2	3	49_cojo_susie.R, revision3/panukb_03_susie.R, revision4/rev4_C_coloc.R
+TwoSampleMR	0.7.9	GitHub MRCIEU/TwoSampleMR (installed from local source)	0.7.9	5	31_mr_bidirectional.R, 36_mr_steiger.R, 39_pqtl_mr.R, 46_csvd_mr_ldsc.R, rev_mr_01_mr.R
+VennDiagram	1.8.2	CRAN		1	39_pqtl_mr.R
